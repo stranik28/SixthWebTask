@@ -23,7 +23,7 @@ function setNewPrice() {
         }
     });
     let cou = document.getElementById('Guns_Count');
-    cou.addEventListener('input',function (ev){setNewPrice();});
+    cou.addEventListener('input',function (){setNewPrice();});
     let s = document.getElementsByName('type');
     s[0].addEventListener('change', function (event) {
         let select = event.target;
