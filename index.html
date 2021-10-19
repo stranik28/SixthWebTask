@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GunShop</title>
+</head>
+<body>
+<h1>Gun price calculator</h1>
+<form class="form">
+    <p>Input guns numbers: </p>
+    <input
+            type="text"
+            id = "Guns_Count"
+            value=""
+            placeholder="Numbers of guns"
+    >
+    <h2 class="subtitle">Select Type:</h2>
+    <select class="form__select" name="type" id="select">
+        <option value="1" name="prod1" id="firstProduct">Pistol</option>
+        <option value="2" name="prod2" id="secondProduct">MachineGun</option>
+        <option value="3" name="prod3" id="threeProduct">sniper rifles</option>
+    </select>
+    <div class="form__radios" id="Machine_gun_r">
+        <input type="radio" name="m_g_s" id="Machine_gun_Sets" />
+        <input type="radio" name="m_g_s" value="full" /> full set
+        <input type="radio" name="m_g_s" value="mid" /> mid set
+        <input type="radio" name="m_g_s" value="low" /> low set
+    </div>
+    <div class="form__checkboxes" id="sniper_options">
+        <input type="checkbox" name="optic" id="optic" /> optical sight
+        <input type="checkbox" name="muff" id="muff" /> muffler
+    </div>
+    <br/>
+</form>
+<br>
+<button type="button" onclick="setNewPrice();">Calculate price</button>
+<h2 id="price" class="start-price"></h2>
+<script src="main.js"></script>
+</body>
+</html>
