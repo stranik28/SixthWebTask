@@ -58,7 +58,7 @@ function setNewPrice() {
 }
 function getPrices() {
     return {
-        prodTypes: [100, 200, 300],
+        prodTypes: [100, 400, 900],
         prodOptions: {
             full: 100,
             mid: 70,
